@@ -5,8 +5,8 @@
 <ul>
   <% @lists.each do |list| %>
   <li>
-     <%= list.attendance %> 
-     <%= list.created_at.in_time_zone('Tokyo') %>
+     【<%= list.attendance %>】 
+     <%= list.created_at.to_s(:datetime_jp) %>
   </li>
   <% end %>
 </ul>
