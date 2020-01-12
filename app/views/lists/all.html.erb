@@ -1,0 +1,86 @@
+<h1>iPadの管理番号を選ぶ</h1>
+
+<table>
+  <tr>
+    <% (1..10).each do |num| %>
+      <td>
+        <%= link_to num, ipad_path(number: num) %>
+      </td>
+    <% end %>
+  </tr>
+  
+  <tr>
+    <% (11..20).each do |num| %>
+      <td>
+        <%= link_to num, ipad_path(number: num) %>
+      </td>
+    <% end %>
+  </tr>
+  
+  <tr>
+    <% (21..30).each do |num| %>
+      <td>
+        <%= link_to num, ipad_path(number: num) %>
+      </td>
+    <% end %>
+  </tr>
+
+  <tr>
+    <% (31..40).each do |num| %>
+      <td>
+        <%= link_to num, ipad_path(number: num) %>
+      </td>
+    <% end %>
+  </tr>  
+  
+  <tr>
+    <% (41..50).each do |num| %>
+      <td>
+        <%= link_to num, ipad_path(number: num) %>
+      </td>
+    <% end %>
+  </tr>  
+  
+  <tr>
+    <% (51..60).each do |num| %>
+      <td>
+        <%= link_to num, ipad_path(number: num) %>
+      </td>
+    <% end %>
+  </tr>  
+  
+  <tr>
+    <% (61..70).each do |num| %>
+      <td>
+        <%= link_to num, ipad_path(number: num) %>
+      </td>
+    <% end %>
+  </tr> 
+  
+  <tr>
+    <% (71..80).each do |num| %>
+      <td>
+        <%= link_to num, ipad_path(number: num) %>
+      </td>
+    <% end %>
+  </tr> 
+  
+  <tr>
+    <% (81..90).each do |num| %>
+      <td>
+        <%= link_to num, ipad_path(number: num) %>
+      </td>
+    <% end %>
+  </tr> 
+  
+  <tr>
+    <% (91..100).each do |num| %>
+      <td>
+        <%= link_to num, ipad_path(number: num) %>
+      </td>
+    <% end %>
+  </tr> 
+  
+</table>
+
+<%= link_to "TOPに戻る", root_path %>

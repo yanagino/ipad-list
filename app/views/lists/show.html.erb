@@ -1,0 +1,15 @@
+<h1>
+  管理番号：<%= @num %>の貸出リスト
+</h1>
+
+<ul>
+  <% @lists.each do |list| %>
+  <li>
+     <%= list.attendance %> 
+     <%= list.created_at.in_time_zone('Tokyo') %>
+  </li>
+  <% end %>
+</ul>
+
+<%= link_to "管理番号一覧に戻る", control_path %>
+<%= link_to "TOPに戻る", root_path %>
