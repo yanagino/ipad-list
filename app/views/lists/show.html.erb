@@ -1,15 +1,21 @@
-<h1>
-  管理番号：<%= @num %>の貸出リスト
-</h1>
+<div class="row">
+<div class="col-sm-10 col-sm-offset-1">
 
-<ul>
+<h3>
+  管理番号:<%= @num %>の貸出リスト
+</h3>
+
+<ul class="list-group">
   <% @lists.each do |list| %>
-  <li>
-     【<%= list.attendance %>】 
+  <li class="list-group-item">
+     【<%= list.attendance %>】： 
      <%= list.created_at.to_s(:datetime_jp) %>
   </li>
   <% end %>
 </ul>
 
-<%= link_to "管理番号一覧に戻る", control_path %>
-<%= link_to "TOPに戻る", root_path %>
+<%= link_to "管理番号一覧に戻る", control_path, class: "btn btn-warning" %>
+<%= link_to "TOPに戻る", root_path, class: "btn btn-danger" %>
+
+</div>
+</div>

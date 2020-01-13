@@ -1,6 +1,15 @@
-<h1>パスワード入力</h1>
-<%= form_tag(confirm_path, method: :post) do %>
-  <%= label_tag :パスワード： %>
-  <%= text_field_tag :seisoku %>
-  <%= submit_tag "送信" %>
-<% end %>
+<br>
+<div class="row">
+  <div class="col-sm-10 col-sm-offset-1">
+    
+    <%= form_tag(confirm_path, method: :post) do %>
+    <div class="form-group">
+      <%= label_tag :パスワード %>
+      <%= text_field_tag :seisoku, "", class: "form-control" %>
+    </div>
+
+    <%= submit_tag "送信", class: "btn btn-info" %>
+    <% end %>
+
+  </div>
+</div>

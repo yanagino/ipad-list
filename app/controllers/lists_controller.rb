@@ -14,12 +14,17 @@ class ListsController < ApplicationController
       render :new
     end
   end
+  
+  def relode
+    @list = List.new
+    render :new
+  end
 
   def all
   end
 
   def show
-    @lists = List.where("number = #{params[:number]}")
+    @lists = List.where("number = #{params[:number]}").order(created_at: "DESC")
     @num = params[:number]
   end
 end

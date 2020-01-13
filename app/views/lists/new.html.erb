@@ -1,15 +1,32 @@
-<h1>iPadを借りる</h1>
-<h2>生徒番号と、借りるiPadの管理番号を入力してください。</h2>
+<div class="row">
+<div class="col-sm-10 col-sm-offset-1">
+
+<h3>iPadを借りる</h3>
+    
+<div class="panel panel-success">
+	<div class="panel-heading">
+		入力情報
+	</div>
+	<div class="panel-body">
+		生徒番号とiPad管理番号を入力してください。
+	</div>
+</div>
 
 <%= form_for(@list) do |f| %>
-<p>例）2年Fクラス50番の場合→「2F50」と入力</p>
-<%= f.label :attendance, "生徒番号：" %>
-<%= f.text_field :attendance %>
 
-<p>例）iPad背面下部にsmc082とある場合→「082」と入力</p>
-<%= f.label :number, "iPad管理番号：" %>
-<%= f.number_field :number %>
+<div class="form-group">
+  <%= f.label :attendance, "生徒番号" %>
+  <%= f.text_field :attendance, class: "form-control", placeholder: "例）2F50"  %>
+</div>
 
-<%= f.submit "投稿" %>
+<div class="form-group">
+<%= f.label :number, "iPad管理番号" %>
+<%= f.number_field :number, class: "form-control", placeholder: "例）82" %>
+</div>
+
+<%= f.submit "送信", class: "btn btn-success" %>
 
 <% end %>
+
+</div>
+</div>

@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   get "borrow", to: "lists#new"
   post "lists", to: "lists#create"
+  get "lists", to: "lists#relode"
   get "control", to: "lists#all"
   get "ipad", to: "lists#show"
 

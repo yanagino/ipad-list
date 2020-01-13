@@ -1,7 +1,9 @@
-<h1>iPadの管理番号を選ぶ</h1>
+<h3>iPadの管理番号を選ぶ</h3>
 
-<table>
-  <tr>
+<b>
+<div class="table-responsive">
+<table class="table table-striped">
+  <tr align="center">
     <% (1..10).each do |num| %>
       <td>
         <%= link_to num, ipad_path(number: num) %>
@@ -9,7 +11,7 @@
     <% end %>
   </tr>
   
-  <tr>
+  <tr align="center">
     <% (11..20).each do |num| %>
       <td>
         <%= link_to num, ipad_path(number: num) %>
@@ -17,7 +19,7 @@
     <% end %>
   </tr>
   
-  <tr>
+  <tr align="center">
     <% (21..30).each do |num| %>
       <td>
         <%= link_to num, ipad_path(number: num) %>
@@ -25,7 +27,7 @@
     <% end %>
   </tr>
 
-  <tr>
+  <tr  align="center">
     <% (31..40).each do |num| %>
       <td>
         <%= link_to num, ipad_path(number: num) %>
@@ -33,7 +35,7 @@
     <% end %>
   </tr>  
   
-  <tr>
+  <tr align="center">
     <% (41..50).each do |num| %>
       <td>
         <%= link_to num, ipad_path(number: num) %>
@@ -41,7 +43,7 @@
     <% end %>
   </tr>  
   
-  <tr>
+  <tr align="center">
     <% (51..60).each do |num| %>
       <td>
         <%= link_to num, ipad_path(number: num) %>
@@ -49,7 +51,7 @@
     <% end %>
   </tr>  
   
-  <tr>
+  <tr align="center">
     <% (61..70).each do |num| %>
       <td>
         <%= link_to num, ipad_path(number: num) %>
@@ -57,7 +59,7 @@
     <% end %>
   </tr> 
   
-  <tr>
+  <tr align="center">
     <% (71..80).each do |num| %>
       <td>
         <%= link_to num, ipad_path(number: num) %>
@@ -65,7 +67,7 @@
     <% end %>
   </tr> 
   
-  <tr>
+  <tr align="center">
     <% (81..90).each do |num| %>
       <td>
         <%= link_to num, ipad_path(number: num) %>
@@ -73,7 +75,7 @@
     <% end %>
   </tr> 
   
-  <tr>
+  <tr align="center">
     <% (91..100).each do |num| %>
       <td>
         <%= link_to num, ipad_path(number: num) %>
@@ -82,5 +84,7 @@
   </tr> 
   
 </table>
+</div>
+</b>
 
-<%= link_to "TOPに戻る", root_path %>
+<%= link_to "TOPに戻る", root_path, class: "btn btn-danger" %>
