@@ -8,7 +8,8 @@
 <ul class="list-group">
   <% @lists.each do |list| %>
   <li class="list-group-item">
-     【<%= list.attendance %>】： 
+     【<%= list.attendance %>】：
+      <%= list.created_at.to_s(:datetime_jp) %>
   </li>
   <% end %>
 </ul>
