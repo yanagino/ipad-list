@@ -24,7 +24,7 @@ class ListsController < ApplicationController
   end
 
   def show
-    @lists = List.where("number = #{params[:number].to_i}").order(created_at: "DESC")
+    @lists = List.where("number = #{params[:number]}").order(created_at: "DESC")
     @num = params[:number]
   end
 end
