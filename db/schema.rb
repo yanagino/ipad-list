@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 20200112062553) do
 
   create_table "lists", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "attendance"
-    t.string   "number"
+    t.integer  "number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
